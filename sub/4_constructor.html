@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4_생성자</title>
+</head>
+<body>
+    <div id="Last"></div>
+    <script>
+        function FreeTime(yes, no, uu) {
+            this.yes = yes;
+            this.no = no;
+            this.uu = uu;
+        }
+
+        const choice = new FreeTime("gooood!", "nooooooo", "saaaaaaaaad");
+        document.getElementById("Last").innerHTML
+         = "수업시간 " + choice.no;
+    </script>
+
+<hr>
+
+    <div id="foodFind"></div>
+    <script>
+        function Lunch(one, two, three) { //function 필수
+            this.one = one;
+            this.two = two;
+            this.three = three;
+        }
+        
+        const eat = new Lunch("밥", "빵", "면"); //인스턴스 객체
+        document.getElementById("foodFind").innerHTML
+         = "오늘 점심 " + eat.one + " 먹을거야";
+    </script>
+
+<hr>
+
+    <p><mark id="find"></mark></p>
+    <script> //함수는 호출할때만 실행, 무엇을 생성할지 규정
+        function Person(first, last, age, eye) { //person: 생성자, (): 매개변수
+            this.first = first;
+            this.last = last;
+            this.age = age;
+            this.eye = eye;
+        }
+        
+        const yeon = new Person("지연", "박", 30, "black");
+        document.getElementById("find").innerHTML
+         = "제 이름은 " + yeon.last + yeon.first + " 입니다" + "</br>" 
+         + "나이는 " + yeon.age + "살 입니다";
+        // var txt = "내가 어디서 나올 것 같애"
+        // document.write(txt)
+    </script>
+</body>
+
+<hr>
+<pre class="col-md-5 ms-3">
+<b>객체생성자</b>
+때로는 같은 유형의 객체를 많이 만들어야 할때가 있다
+객체 유형 생성시 객체 생성사 함수 사용
+생성자(함수)의 이름 첫글자는 대문자
+</pre>
+
+</html>

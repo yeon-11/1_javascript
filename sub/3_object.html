@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3_오브젝트</title>
+</head>
+
+<body>
+    <p><mark id="phoneFind"></mark></p>
+    <p><mark id="sam"></mark></p>
+    <p id="carFind"></p>
+    <script>
+        const apple = { type: "ipone", model: "14pro", color: "white"}
+        document.getElementById("phoneFind").innerHTML =
+        "내 핸드폰은 " + apple.type + "이고 모델은 " + apple.model + "이며 색상은 " + apple.color + "입니다"
+
+        const samsung = {type: "galaxy", model: "s25", color: "black"}
+        document.getElementById("sam").innerHTML =
+        "새로 나온 핸드폰은 " + samsung.type + "이고 모델은 " + samsung.model + "이며 색상은 " + samsung.color + "입니다"
+
+        //객체만들기 (const: 상수) (car: 상수명, 명칭: 커맨드)
+        const car = { type: "mercedes", model: "cls450", color: "white" };
+        document.getElementById("carFind").innerHTML =
+        "내 차는 " + car.type + car.model + "이며 색상은 " + car.color + "입니다"
+    </script>
+</body>
+
+<hr>
+<pre class="col-md-5 ms-3">
+<b>class와 object</b>
+ ◾ class: 객체를 만들기 위한 템플릿
+ ◾ 객체: 사물(object)
+ ◾ Car => Properties[car.name = x6, car.weight = 1t]
+       => Methods[car.start(), car.brake()] 속성과 메서드를 가짐
+ ◾ 객체지향으로 프로그래밍 하면 사용시 편리
+</pre>
+
+</html>
