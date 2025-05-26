@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>4_생성자</title>
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="1_intro.html" class="nav-link">intro</a></li>
+                <li class="nav-item"><a href="2_date.html" class="nav-link">날짜</a></li>
+                <li class="nav-item"><a href="3_object.html" class="nav-link">객체</a></li>
+                <li class="nav-item"><a href="4_constructor.html" class="nav-link">생성자</a></li>
+                <li class="nav-item"><a href="5_ifelse.html" class="nav-link">ifelse</a></li>
+                <li class="nav-item"><a href="6_event.html" class="nav-link">이벤트</a></li>
+                <li class="nav-item"><a href="7_iterator.html" class="nav-link">반복자</a></li>
+                <li class="nav-item"><a href="8_operators.html" class="nav-link">연산자</a></li>
+                <li class="nav-item"><a href="9_bigint.html" class="nav-link">bigint</a></li>
+                <li class="nav-item"><a href="10_json.html" class="nav-link">json</a></li>
+                <li class="nav-item"><a href="11_class.html" class="nav-link">class</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <div id="Last"></div>
     <script>
         function FreeTime(yes, no, uu) {
@@ -16,10 +36,10 @@
 
         const choice = new FreeTime("gooood!", "nooooooo", "saaaaaaaaad");
         document.getElementById("Last").innerHTML
-         = "수업시간 " + choice.no;
+            = "수업시간 " + choice.no;
     </script>
 
-<hr>
+    <hr>
 
     <div id="foodFind"></div>
     <script>
@@ -28,13 +48,13 @@
             this.two = two;
             this.three = three;
         }
-        
+
         const eat = new Lunch("밥", "빵", "면"); //인스턴스 객체
         document.getElementById("foodFind").innerHTML
-         = "오늘 점심 " + eat.one + " 먹을거야";
+            = "오늘 점심 " + eat.one + " 먹을거야";
     </script>
 
-<hr>
+    <hr>
 
     <p><mark id="find"></mark></p>
     <script> //함수는 호출할때만 실행, 무엇을 생성할지 규정
@@ -44,11 +64,11 @@
             this.age = age;
             this.eye = eye;
         }
-        
+
         const yeon = new Person("지연", "박", 30, "black");
         document.getElementById("find").innerHTML
-         = "제 이름은 " + yeon.last + yeon.first + " 입니다" + "</br>" 
-         + "나이는 " + yeon.age + "살 입니다";
+            = "제 이름은 " + yeon.last + yeon.first + " 입니다" + "</br>"
+            + "나이는 " + yeon.age + "살 입니다";
         // var txt = "내가 어디서 나올 것 같애"
         // document.write(txt)
     </script>

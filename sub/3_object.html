@@ -8,22 +8,40 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-sm bg-light">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="1_intro.html" class="nav-link">intro</a></li>
+                <li class="nav-item"><a href="2_date.html" class="nav-link">날짜</a></li>
+                <li class="nav-item"><a href="3_object.html" class="nav-link">객체</a></li>
+                <li class="nav-item"><a href="4_constructor.html" class="nav-link">생성자</a></li>
+                <li class="nav-item"><a href="5_ifelse.html" class="nav-link">ifelse</a></li>
+                <li class="nav-item"><a href="6_event.html" class="nav-link">이벤트</a></li>
+                <li class="nav-item"><a href="7_iterator.html" class="nav-link">반복자</a></li>
+                <li class="nav-item"><a href="8_operators.html" class="nav-link">연산자</a></li>
+                <li class="nav-item"><a href="9_bigint.html" class="nav-link">bigint</a></li>
+                <li class="nav-item"><a href="10_json.html" class="nav-link">json</a></li>
+                <li class="nav-item"><a href="11_class.html" class="nav-link">class</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <p><mark id="phoneFind"></mark></p>
     <p><mark id="sam"></mark></p>
     <p id="carFind"></p>
     <script>
-        const apple = { type: "ipone", model: "14pro", color: "white"}
+        const apple = { type: "ipone", model: "14pro", color: "white" }
         document.getElementById("phoneFind").innerHTML =
-        "내 핸드폰은 " + apple.type + "이고 모델은 " + apple.model + "이며 색상은 " + apple.color + "입니다"
+            "내 핸드폰은 " + apple.type + "이고 모델은 " + apple.model + "이며 색상은 " + apple.color + "입니다"
 
-        const samsung = {type: "galaxy", model: "s25", color: "black"}
+        const samsung = { type: "galaxy", model: "s25", color: "black" }
         document.getElementById("sam").innerHTML =
-        "새로 나온 핸드폰은 " + samsung.type + "이고 모델은 " + samsung.model + "이며 색상은 " + samsung.color + "입니다"
+            "새로 나온 핸드폰은 " + samsung.type + "이고 모델은 " + samsung.model + "이며 색상은 " + samsung.color + "입니다"
 
         //객체만들기 (const: 상수) (car: 상수명, 명칭: 커맨드)
         const car = { type: "mercedes", model: "cls450", color: "white" };
         document.getElementById("carFind").innerHTML =
-        "내 차는 " + car.type + car.model + "이며 색상은 " + car.color + "입니다"
+            "내 차는 " + car.type + car.model + "이며 색상은 " + car.color + "입니다"
     </script>
 </body>
 
